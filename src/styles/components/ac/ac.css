@@ -1,0 +1,121 @@
+.body{
+    background-color: #282c34;
+}
+.ned{
+    color: white;
+    font-size: 30px;
+}
+.acMainContainer{
+    height: 12rem ;
+    width: 40rem;
+    background-color: white;
+    border-radius: 15px;
+    margin: auto;
+    justify-content: center;
+}
+.acName{
+    /*height: 4rem;*/
+    /*width: 40rem;*/
+    margin-top: 45px;
+    display: flex;
+    margin-left: 5rem;
+    font-size: 35px;
+}
+.acName p{
+    margin-left: 56px;
+
+}
+.acBoxName{
+    margin-left: 10rem;
+}
+.vent{
+    height: 4rem;
+    width: 38rem;
+    border-radius: 5px;
+    border: 2px solid darkslategray;
+    margin: 60px auto auto;
+
+}
+.ventDisplayDiv{
+    background-color: darkslategray;
+    margin-top: 10px;
+    height: 60px;
+
+}
+.remote{
+    height: 47rem;
+    width: 25rem;
+    border: 2px solid sandybrown;
+    padding-top: 35px;
+    background-color: cadetblue;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 5rem auto auto;
+
+}
+.currentTemperature{
+    color: white;
+    font-size: 25px;
+}
+.displayScreen{
+    height: 10rem;
+    width: 15rem;
+    border: 2px solid rebeccapurple ;
+
+    margin: auto;
+    justify-content: center;
+    border-radius: 10px;
+}
+.switchDisplayOn{
+    font-family: Algerian;
+    font-size: 15px;
+    color: white;
+}
+.switchDisplayOff{
+    font-family: Algerian;
+    font-size: 50px;
+    color: white;
+}
+.increaseDecrease{
+    height: 4rem;
+    width: 11rem;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    margin-top: 25px;
+    background-color: darkslategray;
+}
+.powerSwitch{
+    display: flex;
+    justify-content: center;
+    margin: 25px auto;
+}
+.switch{
+    height: 30px;
+    width: 60px;
+    color: white;
+    font-size: 15px;
+    border-radius: 15px;
+    background-color: darkred;
+    font-family: -apple-system,
+    BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+.switch:hover{
+    background-color: orangered;
+}
+.increaseDecreaseButtonDiv{
+    margin-bottom: 45px;
+}
+.one_nine button{
+    margin-left: 2rem;
+    height: 40px;
+    width: 55px;
+    background-color: #282c34;
+    color: white;
+    border-radius: 10px;
+    font-size: 24px;
+
+}
+.one_nine{
+    margin-bottom: 2rem;
+}
