@@ -2,6 +2,22 @@
 import React, { Component } from 'react'
 import ac from '../styles/components/ac/ac.css'
 
+let oneButton = document.querySelector("#one")
+let twoButton = document.querySelector("#two")
+let threeButton = document.querySelector("#three")
+
+let fourButton = document.querySelector("#four")
+let fiveButton = document.querySelector("#five")
+let sixButton = document.querySelector("#six")
+
+let sevenButton = document.querySelector("#seven")
+let eightButton = document.querySelector("#eight")
+let nineButton = document.querySelector("#nine")
+
+//onclick
+
+
+
 export class Index extends Component {
     vd;
 
@@ -10,10 +26,37 @@ export class Index extends Component {
         this.state ={
             temperature: 24,
             isOn : false,
-            acName: "Ned Stack A.C"
+            acName: "Ned Stack A.C",
+            temperatureButtonClickCount: 0,
+            clickedNumberButton : 0
         }
     }
-
+    oneButtonFunction(){
+    }
+    twoButtonFunction(){
+       return 2
+    }
+    threeButtonFunction(){
+        return 3
+    }
+    fourButtonFunction(){
+        return 4
+    }
+    fiveButtonFunction(){
+        return 5
+    }
+    sixButtonFunction(){
+        return 6
+    }
+    sevenButtonFunction(){
+        return 7
+    }
+    eightButtonFunction(){
+        return 8
+    }
+    nineButtonFunction(){
+        return 9
+    }
     increaseTemperature(){
         if(this.state.isOn && this.getTemperature() <30) {
             this.setState({
@@ -22,6 +65,9 @@ export class Index extends Component {
         }
 
 
+    }
+    getTemperatureButtonClickCount(){
+        return this.state.temperatureButtonClickCount
     }
     getTemperature(){
         return this.state.temperature
@@ -61,16 +107,19 @@ export class Index extends Component {
     temperatureDisplay(){
         if (this.acIsOn()) {
             this.ventDisplay()
-            return <p className={"currentTemperature"}> Current Temperature  {this.state.temperature}</p>
+            return <div>
+                        <p className={"currentTemperature"}> Current Temperature </p>
+                        <h3  className={"displayTemperature"}> {this.state.temperature}</h3>
+                    </div>
         }
         else return <p> </p>
     }
     ventDisplay(){
-        let vent
-        if(this.acIsOn())
-           vent =  document.querySelector(".ventDisplayDiv")
+        // let vent
+        // if(this.acIsOn())
+        //    vent =  document.querySelector(".ventDisplayDiv")
         // let vent = this.vd.value()
-           vent = <div className={"vent"}> </div>
+        //    vent = <div className={"vent"}> </div>
     }
     acBoxTemperatureDisplay(){
         if(this.acIsOn()){
@@ -91,7 +140,6 @@ export class Index extends Component {
                     </div>
                     <div onClick={()=> this.ventDisplay()} id={"vd"} value={"vent"} className={"ventDisplayDiv"}>
 
-                        const [vent setVent] = use
                     </div>
                 </div>
 
@@ -112,19 +160,19 @@ export class Index extends Component {
 
                     <div className={"buttonPad"}>
                         <div className={"one_nine"}>
-                            <button> 1 </button>
-                            <button> 2 </button>
-                            <button> 3 </button>
+                            {/*<button id={"one"} onClick={this.oneButtonFunction()}> 1 </button>*/}
+                            {/*<button id={"two"} onClick={this.twoButtonFunction()}> 2 </button>*/}
+                            <button id={"three"}> 3 </button>
                         </div>
                         <div className={"one_nine"}>
-                            <button> 4 </button>
-                            <button> 5 </button>
-                            <button> 6 </button>
+                            <button id={'four'}> 4 </button>
+                            <button id={"five"}> 5 </button>
+                            <button id={"six"}> 6 </button>
                         </div>
                         <div className={"one_nine"}>
-                            <button> 7 </button>
-                            <button> 8 </button>
-                            <button> 9 </button>
+                            <button id={"seven"}> 7 </button>
+                            <button id={"eight"}> 8 </button>
+                            <button id={"nine"}> 9 </button>
                         </div>
                     </div>
                 </div>

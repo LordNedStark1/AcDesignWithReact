@@ -53,6 +53,10 @@
     margin: 5rem auto auto;
 
 }
+.displayTemperature{
+    font-size: 40px;
+    color: white;
+}
 .currentTemperature{
     color: white;
     font-size: 25px;
